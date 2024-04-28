@@ -1,0 +1,15 @@
+.history
+public
+dist
+server
+server/utils/dubbo_decorator.ts
+server/utils/jaegerTrace.ts
+server/utils/logger.ts
+server/middlewares/*.ts
+server/services/**/*.ts
+utils/im/nimUtil.js
+lib
+packages/*/es6
+packages/*/lib
+packages/*/__tests__
+packages/*/tscache
