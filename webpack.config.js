@@ -10,6 +10,9 @@ const theme = {
 };
 
 module.exports = {
+  resolve: {
+    extensions: ['.js', '.json', '.jsx', '.ts', '.tsx'],
+  },
   entry: path.join(__dirname, 'src/index.tsx'),
   output: {
     path: path.join(__dirname, 'dist'),
