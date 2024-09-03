@@ -11,7 +11,8 @@
     "plugin:@typescript-eslint/recommended",
     "eslint:recommended",
     "plugin:react/recommended",
-    "plugin:prettier/recommended" // 使用prettier中的样式规范，且如果使得ESLint会检测prettier的格式问题，同样将格式问题以error的形式抛出
+    "plugin:prettier/recommended", // 使用prettier中的样式规范，且如果使得ESLint会检测prettier的格式问题，同样将格式问题以error的形式抛出
+    "plugin:react/jsx-runtime"
   ],
   "plugins": ["prettier", "@typescript-eslint"],
   "parserOptions": {

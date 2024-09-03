@@ -144,7 +144,7 @@ function C4(props: any) {
 }
 
 function C2() {
-  console.log('c2')
+  console.log('c2');
   return (
     <div style={{border: '1px solid orange', margin: 24}}>
       c2 <C4></C4>
