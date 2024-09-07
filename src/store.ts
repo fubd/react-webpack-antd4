@@ -1,13 +1,7 @@
-import {createStore, applyMiddleware} from 'redux';
+import {proxy} from 'valtio';
 
-export default createStore((preState: any, action: {type: any; payload: any}) => {
-  if (action.type === 'ADD_ID') {
-    return {
-      ...preState,
-      userId: action.payload,
-    };
-  }
-  return {
-    userId: 123,
-  };
-});
+export const store = proxy({menu: 0});
+
+export const addMenu = () => {
+  store.menu++;
+};
