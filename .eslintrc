@@ -26,10 +26,12 @@
   "rules": {
     "prettier/prettier": "error",
     "no-unused-vars": 0,
-    "@typescript-eslint/no-unused-vars": "off",
-    "no-undef": "error",
     "@typescript-eslint/no-var-requires": "off",
-    "@typescript-eslint/no-explicit-any": 0
+    "@typescript-eslint/no-explicit-any": 0,
+    
+    // 关闭 no-undef 检查 , 使用 typescript-eslint/no-unused-vars 代替，防止 eslint 不识别全局ts变量
+    "no-undef": "off",
+    "@typescript-eslint/no-unused-vars": "error"
   },
   "env": {
     "browser": true,
